@@ -78,6 +78,7 @@ This query provides 21 entries.
 
 To identify all HTP specimen from Saliva samples, you might use a query like the following: 
 > https://include-api-fhir-service.includedcc.org/Specimen?_tag=HTP&type=Saliva
+
 or Blood
 > https://include-api-fhir-service.includedcc.org/Specimen?_tag=HTP&type=Peripheral-Whole-Blood
 
