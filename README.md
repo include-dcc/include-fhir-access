@@ -32,9 +32,8 @@ Because the API is a true web api, users can use any modern HTTP client to perfo
 
 # Helpful Tools
 ## NCPI Fhir Client
-The [NCPI Fhir Client](https://github.com/NIH-NCPI/ncpi-fhir-client) is a python library that is designed to help streamline FHIR Queries by handling the authorization components (for a number of different authorization schemes) and traversing pagination when performing queries with a large number of results. It also exposes a simple command line tool called ''fhirq'' which can be used to perform queries. 
+The [NCPI Fhir Client](https://github.com/NIH-NCPI/ncpi-fhir-client) is a python library that is designed to help streamline FHIR Queries by handling the authorization components (for a number of different authorization schemes) and traversing pagination when performing queries with a large number of results. It also exposes a simple command line tool called __fhirq__ which can be used to perform queries. 
 
-TBD: Write some text over at fhir_client's web page to explain how to use fhirq. 
+For more information about the __fhirq__ application, please see the [README file](https://github.com/NIH-NCPI/ncpi-fhir-client#fhirq---cli-fhir-query). 
 
-TBD: Write some text to quickly cover how to create the fhir_hosts file to allow easy access to the fhir server. 
 
