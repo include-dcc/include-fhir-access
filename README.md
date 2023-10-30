@@ -63,10 +63,12 @@ Now that you know the global ID, you can pull data associated with that subject 
 
 Returns all Observations associated with the patient from above
 > https://include-api-fhir-service.includedcc.org/Observation?subject=Patient/pt-dg7zyh89kj
+
 Looking over the three observations here, we can see that the patient does have Down Syndrome and is the Proband for the family. 
 
 Return all conditions associated with the Patient:
 > https://include-api-fhir-service.includedcc.org/Condition?subject=Patient/pt-dg7zyh89kj
+
 This shows 9 different conditions associated with this particular patient. 
 
 For some other types of resources, we need to switch over to a study that has more information, such as HTP. For these examples, we'll use the following subject: 
