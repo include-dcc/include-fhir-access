@@ -6,8 +6,10 @@ The two sets of INCLUDE servers, "Legacy" and "New" differ by authorization mech
 The new servers use OAuth2 for authorization. Eventually, one should be able to simply follow the standard end user OAth flow to access the server for queries. However, for now, the only access available is through the service account style access. Please see then instructions [here](https://github.com/kids-first/kf-api-fhir-service#-quickstart---api-users) about how to set up an account and acquire a secret that can be used for authorizing FHIR queries. 
 
 ## Legacy Servers
-As mentioned above, the following servers employ a cookie based authorization that requires periodic refreshing through the browser. While this works, it can be klunky when one tries to access the server after the cookie's expiration. 
+### Access Registration and Authorization Details
+As mentioned above, the following servers employ a cookie based authorization that requires periodic refreshing through the browser. While this works, it can be klunky when one tries to access the server after the cookie's expiration. Please see the official documentation about [requesting access](https://github.com/kids-first/kf-api-fhir-service/blob/master/docs/legacy/README.md#request-access) for instructions about gaining access and [instructions on authenticating](https://github.com/kids-first/kf-api-fhir-service/blob/master/docs/legacy/README.md#authenticate-to-access-server-environment).
 
+### Server Details
 * DEV - https://include-api-fhir-service-dev.includedcc.org/ (This server is no longer accessible)
 * QA - https://include-api-fhir-service-qa.includedcc.org/
 * PROD - https://include-api-fhir-service.includedcc.org/
@@ -17,8 +19,12 @@ Typically, the only server those who are not involved in the ETL or QA process w
 It should be noted that QA is whitelisted and, thus, only accessible to those who have requested access from the admins. Typically, there is no reason for those not involved in the ETL process nor QA to access this server. 
 
 ## Updated Servers
-As mentioned above, the new servers have been configured to use OAuth for authorization. At some point in the near future, this will mean that anyone who has accessed the INCLUDE portal and accepted the agreement posted there can use the standard OAth flow to perform queries. However, at this time, only service accounts style access is permitted. Please see then instructions [here](https://github.com/kids-first/kf-api-fhir-service#-quickstart---api-users) about how to acquire a secret that can be used for accessing the data.
+### Access Registration and Authorization Details
+For instructions about getting access to the servers, please see the [official instructions](https://github.com/kids-first/kf-api-fhir-service#-quickstart---api-users).
 
+As mentioned above, the new servers have been configured to use OAuth for authorization. At some point in the near future, this will mean that anyone who has accessed the INCLUDE portal and accepted the agreement posted there can use the standard OAth flow to perform queries. However, at this time, only service accounts style access is permitted. Please see the [official instructions](https://github.com/kids-first/kf-api-fhir-service#-quickstart---api-users) about how to acquire a secret that can be used for accessing the data.
+
+### Server Details
 * DEV - https://include-api-fhir-service-upgrade-dev.includedcc.org
 * QA - https://include-api-fhir-service-upgrade-qa.includedcc.org
 * PROD - https://include-api-fhir-service-upgrade.includedcc.org
